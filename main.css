@@ -143,4 +143,9 @@ section:nth-child(even) {
   p {
     font-size: 16px;
   }
+
+  .social-icons {
+    width: 25px;
+    height: 25px;
+  }
 }
