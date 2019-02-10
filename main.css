@@ -52,6 +52,10 @@ label {
   display: none;
 }
 
+.site-nav--open {
+  clip-path: circle(250% at top right);
+}
+
 header {
   padding: 8% 0;
   font-family: "Roboto Slab", serif;
@@ -98,8 +102,8 @@ section:nth-child(even) {
 }
 
 .project-img-1 {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
 }
 
 .social-icons {

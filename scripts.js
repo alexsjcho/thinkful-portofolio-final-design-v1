@@ -1,13 +1,28 @@
-// "use strict";
-$(document).ready(function() {
-  let scrollLink = $(".scroll");
-  scrollLink.click(function(e) {
+"use strict";
+
+// function navHamMenu() {
+//   $(".toggle-button").click(function() {
+//     $(".site-nav").toggleClass
+//     $(this).toggleClass("open");
+//   });
+// }
+
+function menuItemListener() {
+  $("a[href*=#]").bind("click", function(e) {
     e.preventDefault();
-    $("body,html").animate(
-      {
-        scrollTop: $(this.hash).offset().top
-      },
-      1000
-    );
+    let target = $(this).attr("href");
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $(target).offset().top
+        },
+        1000,
+        function() {
+          location.hash = target;
+        }
+      );
+
+    return false;
   });
-});
+}

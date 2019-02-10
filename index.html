@@ -13,23 +13,23 @@
 </head>
 
 <body>
-  <nav role="navigation">
-    <label for="toggle">&#9776;</label>
+  <nav class="site-nav" role="navigation">
+    <label class="toggle-button" for="toggle">&#9776;</label>
     <input type="checkbox" class="toggle">
     <div class="menu">
-      <a class="scroll" href="#home">Home</a>
-      <a class="scroll" href="#about">About</a>
-      <a class="scroll" href="#project">Projects</a>
-      <a class="scroll" href="#contact">Contact</a>
+      <a class="scroll" href="#1">Home</a>
+      <a class="scroll" href="#2">About</a>
+      <a class="scroll" href="#3">Projects</a>
+      <a class="scroll" href="#4">Contact</a>
     </div>
   </nav>
   <main role="main">
-    <header role="banner">
+    <header role="banner" class="page-section" id="1">
       <h1>Software Developer</h1>
       <img id="banner-img" src="alex-plank-move.jpg" alt="alex-doing-breakdance-pose">
     </header>
 
-    <section class="nav-about">
+    <section class="page-section" id="2">
       <h2>About Me</h2>
       <h5>Who Am I?</h5>
       <p>
@@ -54,7 +54,7 @@
       </p>
     </section>
 
-    <section class="nav-project">
+    <section class="page-section" id="3">
       <h2>Project Section</h2>
       <h3>jQuery Quiz App</h3>
       <img class="project-img-1" src="jquery-quiz-app.png" alt="jquery-quiz-app">
@@ -74,7 +74,7 @@
         <p><a href="https://alexsjcho.github.io/thinkful-quiz-app/"> Do You Know Javascript? </a> </a></p>
     </section>
 
-    <section class="nav-contact">
+    <section class="page-section" id="4">
       <h2>Contact Me</h2>
       <div class="social-buttons">
         <a href="https://github.com/alexsjcho/"><img class="social-icons"
@@ -91,6 +91,7 @@
   <footer role="content-info">
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 
