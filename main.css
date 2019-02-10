@@ -47,7 +47,8 @@ nav {
   right: 0;
   z-index: 10;
 }
-.toggle {
+.toggle,
+label {
   display: none;
 }
 
@@ -55,6 +56,7 @@ header {
   padding: 8% 0;
   font-family: "Roboto Slab", serif;
   color: #3e79d8;
+  margin-top: -5%;
 }
 
 h2 {
@@ -72,13 +74,12 @@ p {
 }
 
 #banner-img {
-  background: url(alex-plank-move.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 50%;
-  width: 50%;
+  width: 45%;
   border-radius: 10%;
   opacity: 0.9;
+  margin-top: -1.5%;
 }
 
 section {
@@ -102,15 +103,73 @@ section:nth-child(even) {
 }
 
 .social-icons {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
 }
 
-/* Mobile responsiveness */
-@media only screen and (max-width: 650px) {
+/* Desktop responsiveness */
+@media only screen and (max-width: 1300px) {
   label {
     display: block;
     cursor: pointer;
+  }
+  #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    border-radius: 10%;
+    opacity: 0.9;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu > a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+  }
+
+  .toggle:checked + .menu {
+    display: block;
+    display: show;
+  }
+  body {
+    font-size: 28px;
+  }
+
+  h1,
+  h2 {
+    font-size: 34px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .social-icons {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Tablet responsiveness */
+@media only screen and (max-width: 1000px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 70%;
+    border-radius: 10%;
+    opacity: 0.9;
   }
 
   .menu {
@@ -145,7 +204,57 @@ section:nth-child(even) {
   }
 
   .social-icons {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+  }
+}
+/* Mobile responsiveness */
+@media only screen and (max-width: 650px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  #banner-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 90%;
+    border-radius: 10%;
+    opacity: 0.9;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu > a {
+    display: block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+  }
+
+  .toggle:checked + .menu {
+    display: block;
+    display: show;
+  }
+  body {
+    font-size: 20px;
+  }
+
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .social-icons {
+    width: 30px;
+    height: 30px;
   }
 }
