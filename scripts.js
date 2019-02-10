@@ -1,11 +1,11 @@
 "use strict";
 
-// function navHamMenu() {
-//   $(".toggle-button").click(function() {
-//     $(".site-nav").toggleClass
-//     $(this).toggleClass("open");
-//   });
-// }
+function navHamburger() {
+  $(".menu").click(function() {
+    $(".toggle").toggleClass;
+    $(this).toggleClass("open");
+  });
+}
 
 function menuItemListener() {
   $("a[href*=#]").bind("click", function(e) {
