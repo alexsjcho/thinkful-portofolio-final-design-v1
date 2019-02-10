@@ -1,9 +1,9 @@
 "use strict";
 
 function navHamburger() {
-  $(".menu").click(function() {
-    $(".toggle").toggleClass;
-    $(this).toggleClass("open");
+  $(".toggle").click(function() {
+    $(".menu").toggleClass;
+    $(this).toggleClass("menu");
   });
 }
 
