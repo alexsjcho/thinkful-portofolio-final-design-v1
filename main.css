@@ -29,10 +29,8 @@ footer {
 .menu > a {
   text-decoration: none;
   padding-right: 5%;
-  font-size: 16px;
   font-weight: bold;
   color: whitesmoke;
-  text-transform: uppercase;
 }
 
 nav > label {
@@ -46,17 +44,14 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-}
-.toggle,
-label {
-  display: none;
+  margin-bottom: 5%;
 }
 
 header {
   padding: 8% 0;
   font-family: "Roboto Slab", serif;
   color: #3e79d8;
-  margin-top: -5%;
+  margin-top: -4%;
 }
 
 h2 {
@@ -109,22 +104,6 @@ section:nth-child(even) {
 
 /* Desktop responsiveness */
 @media only screen and (max-width: 1300px) {
-  .nav-links {
-    display: show;
-    display: inline-block;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: whitesmoke;
-    text-decoration: none;
-  }
-
-  .toggle-button:checked + .nav-links {
-    display: block;
-    display: show;
-  }
-
   label {
     display: block;
     cursor: pointer;
@@ -136,16 +115,16 @@ section:nth-child(even) {
     border-radius: 10%;
     opacity: 0.9;
   }
-
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 24px;
+  }
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
-  }
-  .menu > a {
-    display: block;
-    border-bottom: 1px solid #eaeaeb43;
-    margin: 0;
+    padding: 1%;
   }
 
   body {
@@ -172,21 +151,6 @@ section:nth-child(even) {
 
 /* Tablet responsiveness */
 @media only screen and (max-width: 1000px) {
-  .nav-links {
-    display: show;
-    display: inline-block;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: whitesmoke;
-    text-decoration: none;
-  }
-  .toggle-button:checked + .nav-links {
-    display: block;
-    display: show;
-  }
-
   label {
     display: block;
     cursor: pointer;
@@ -198,16 +162,18 @@ section:nth-child(even) {
     border-radius: 10%;
     opacity: 0.9;
   }
+  nav,
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 20px;
+  }
 
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
-  }
-  .menu > a {
-    display: block;
-    border-bottom: 1px solid #eaeaeb43;
-    margin: 0;
+    padding: 1%;
   }
 
   body {
@@ -233,21 +199,6 @@ section:nth-child(even) {
 }
 /* Mobile responsiveness */
 @media only screen and (max-width: 650px) {
-  .nav-links {
-    display: show;
-    display: inline-block;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding: 1rem 0;
-    font-weight: 300;
-    color: whitesmoke;
-    text-decoration: none;
-  }
-  .toggle-button:checked + .nav-links {
-    display: block;
-    display: show;
-  }
-
   label {
     display: block;
     cursor: pointer;
@@ -263,12 +214,14 @@ section:nth-child(even) {
   .menu {
     text-align: center;
     width: 100%;
-    display: none;
+    padding: 1%;
   }
+  nav,
   .menu > a {
-    display: block;
+    display: inline-block;
     border-bottom: 1px solid #eaeaeb43;
     margin: 0;
+    font-size: 18px;
   }
 
   body {
