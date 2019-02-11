@@ -52,10 +52,6 @@ label {
   display: none;
 }
 
-.site-nav--open {
-  clip-path: circle(250% at top right);
-}
-
 header {
   padding: 8% 0;
   font-family: "Roboto Slab", serif;
@@ -121,8 +117,13 @@ section:nth-child(even) {
     font-weight: 300;
     color: whitesmoke;
     text-decoration: none;
-    @include easeOut;
   }
+
+  .toggle-button:checked + .nav-links {
+    display: block;
+    display: show;
+  }
+
   label {
     display: block;
     cursor: pointer;
@@ -146,10 +147,6 @@ section:nth-child(even) {
     margin: 0;
   }
 
-  .toggle:checked + .menu {
-    display: block;
-    display: show;
-  }
   body {
     font-size: 28px;
   }
@@ -182,7 +179,10 @@ section:nth-child(even) {
     font-weight: 300;
     color: whitesmoke;
     text-decoration: none;
-    @include easeOut;
+  }
+  .toggle-button:checked + .nav-links {
+    display: block;
+    display: show;
   }
 
   label {
@@ -208,10 +208,6 @@ section:nth-child(even) {
     margin: 0;
   }
 
-  .toggle:checked + .menu {
-    display: block;
-    display: show;
-  }
   body {
     font-size: 24px;
   }
@@ -243,8 +239,12 @@ section:nth-child(even) {
     font-weight: 300;
     color: whitesmoke;
     text-decoration: none;
-    @include easeOut;
   }
+  .toggle-button:checked + .nav-links {
+    display: block;
+    display: show;
+  }
+
   label {
     display: block;
     cursor: pointer;
@@ -268,10 +268,6 @@ section:nth-child(even) {
     margin: 0;
   }
 
-  .toggle:checked + .menu {
-    display: block;
-    display: show;
-  }
   body {
     font-size: 20px;
   }

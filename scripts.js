@@ -1,8 +1,7 @@
 "use strict";
 
 function navHamburger() {
-  $(".toggle").click(function() {
-    $(".menu").toggleClass;
+  $(".toggle-button").click(function() {
     $(this).toggleClass("nav-link");
   });
 }
