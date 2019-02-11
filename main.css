@@ -110,6 +110,7 @@ section:nth-child(even) {
 /* Desktop responsiveness */
 @media only screen and (max-width: 1300px) {
   .nav-links {
+    display: show;
     display: inline-block;
     font-size: 20px;
     text-transform: uppercase;
@@ -172,6 +173,7 @@ section:nth-child(even) {
 /* Tablet responsiveness */
 @media only screen and (max-width: 1000px) {
   .nav-links {
+    display: show;
     display: inline-block;
     font-size: 20px;
     text-transform: uppercase;
@@ -232,6 +234,7 @@ section:nth-child(even) {
 /* Mobile responsiveness */
 @media only screen and (max-width: 650px) {
   .nav-links {
+    display: show;
     display: inline-block;
     font-size: 20px;
     text-transform: uppercase;
