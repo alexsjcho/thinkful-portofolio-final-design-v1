@@ -28,11 +28,11 @@ footer {
 }
 .menu > a {
   text-decoration: none;
-  display: inline;
   padding-right: 5%;
   font-size: 16px;
   font-weight: bold;
   color: whitesmoke;
+  text-transform: uppercase;
 }
 
 nav > label {
@@ -113,6 +113,16 @@ section:nth-child(even) {
 
 /* Desktop responsiveness */
 @media only screen and (max-width: 1300px) {
+  .nav-links {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: whitesmoke;
+    text-decoration: none;
+    @include easeOut;
+  }
   label {
     display: block;
     cursor: pointer;
@@ -164,6 +174,17 @@ section:nth-child(even) {
 
 /* Tablet responsiveness */
 @media only screen and (max-width: 1000px) {
+  .nav-links {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: whitesmoke;
+    text-decoration: none;
+    @include easeOut;
+  }
+
   label {
     display: block;
     cursor: pointer;
@@ -214,6 +235,16 @@ section:nth-child(even) {
 }
 /* Mobile responsiveness */
 @media only screen and (max-width: 650px) {
+  .nav-links {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: whitesmoke;
+    text-decoration: none;
+    @include easeOut;
+  }
   label {
     display: block;
     cursor: pointer;

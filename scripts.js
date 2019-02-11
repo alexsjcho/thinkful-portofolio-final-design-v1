@@ -3,7 +3,7 @@
 function navHamburger() {
   $(".toggle").click(function() {
     $(".menu").toggleClass;
-    $(this).toggleClass("menu");
+    $(this).toggleClass("nav-link");
   });
 }
 
