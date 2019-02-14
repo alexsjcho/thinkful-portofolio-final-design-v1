@@ -44,7 +44,8 @@ nav {
   left: 0;
   right: 0;
   z-index: 10;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
+  text-decoration: none;
 }
 
 header {
@@ -52,6 +53,10 @@ header {
   font-family: "Roboto Slab", serif;
   color: #3e79d8;
   margin-top: -4%;
+}
+h1 {
+  padding: 10px;
+  margin: 25px;
 }
 
 h2 {
@@ -65,7 +70,7 @@ p {
   font-size: 20px;
   word-wrap: break-word;
   text-align: center;
-  padding: 5%;
+  padding: 10px;
 }
 
 #banner-img {
@@ -74,7 +79,7 @@ p {
   width: 45%;
   border-radius: 10%;
   opacity: 0.9;
-  margin-top: -1.5%;
+  margin-top: -10px;
 }
 
 section {
@@ -137,6 +142,7 @@ section:nth-child(even) {
   }
   h5 {
     font-size: 20px;
+    margin-bottom: -10px;
   }
 
   p {
@@ -168,6 +174,10 @@ section:nth-child(even) {
     border-bottom: 1px solid #eaeaeb43;
     margin: 0;
     font-size: 20px;
+  }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
   }
 
   .menu {
@@ -223,6 +233,10 @@ section:nth-child(even) {
     margin: 0;
     font-size: 18px;
   }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+  }
 
   body {
     font-size: 20px;
@@ -243,5 +257,20 @@ section:nth-child(even) {
   .social-icons {
     width: 30px;
     height: 30px;
+  }
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 350px) {
+  nav,
+  .menu > a {
+    display: inline-block;
+    border-bottom: 1px solid #eaeaeb43;
+    margin: 0;
+    font-size: 12px;
+  }
+  nav {
+    padding-bottom: 5px;
+    margin-bottom: 25px;
   }
 }
